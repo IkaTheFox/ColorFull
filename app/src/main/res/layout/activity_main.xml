@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/titre_palette"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textSize="36dp"
+        android:layout_weight="0.14" />
+
+
+    <TextView
+        android:id="@+id/demo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14"
+        android:text="@string/color_name"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="32dp"
+        android:textStyle="italic"
+        tools:textColor="?attr/colorControlHighlight" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/chercher"
+        android:id="@+id/lookup"
+        android:layout_weight="0.14"
+        android:textSize="18dp"
+        android:onClick="seekClosestColor" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:text="@string/LabelRouge"
+            android:id="@+id/textView3"
+            android:textSize="24dp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Rouge"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:id="@+id/EditRouge"
+            android:enabled="true"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:text="@string/LabelVert"
+            android:id="@+id/textView4"
+            android:textSize="24dp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Vert"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:id="@+id/EditVert"
+            android:enabled="true"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:text="@string/LabelBleu"
+            android:id="@+id/textView5"
+            android:textSize="24dp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Bleu"
+            android:indeterminate="false"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:id="@+id/EditBleu"
+            android:enabled="true"
+            android:textSize="24dp" />
+    </LinearLayout>
+</LinearLayout>
