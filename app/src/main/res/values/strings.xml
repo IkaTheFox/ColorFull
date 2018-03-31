@@ -170,4 +170,6 @@
     <string name="color_list">Color List</string>
     <string name="launcher_icon_press_to_use_the_color_tool">Launcher icon, press to use the color tool</string>
     <string name="welcome_msg">Welcome to Colorfull ! Please tap the image to get to the palette tool, or tap one of the other buttons to get to the rest of the app.</string>
+    <string name="gtScheme">Scheme Master</string>
+    <string name="color_hex_ex_ed1703">Color Hex (Ex: ED1703)</string>
 </resources>

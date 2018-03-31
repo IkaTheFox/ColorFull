@@ -29,6 +29,14 @@ public class Main_menu extends AppCompatActivity {
             }
         });
 
+        /*Button gtS = (Button) findViewById(R.id.gotoSchemeButton);
+        gtS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Main_menu.this.startActivity(new Intent(Main_menu.this,Schemer.class));
+            }
+        });*/
+
         ImageButton mainLogo = (ImageButton) findViewById(R.id.LauncherButton);
         mainLogo.setOnClickListener(new View.OnClickListener() {
             @Override
